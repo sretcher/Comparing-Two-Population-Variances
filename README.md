@@ -1,1 +1,2 @@
 # Comparing-Two-Population-Variances
+n Archives of Pediatrics and Adolescent Medicine (Dec. 2007), a study of honey as a children’s cough remedy was conducted in which 68 children were randomly assigned to receive either a cold medicine (DM group, n=33) or honey (H group, n=35). Cough improvement scores were recorded for the two groups. Researchers wanted to know if the variability in coughing improvement scores differed between the two groups.
