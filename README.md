@@ -9,4 +9,4 @@ From the informations given, our samples are independent since the children were
 
 Checking the normal probability plots, we will assume the populations are about normally distributed. If we have doubts about the normality of the populations, we could always opt for a nonparametric method like Levene's Test. 
 
-![histogram](`Normal Plots1.png`)
+![histogram](Normal-Plots1.png)
