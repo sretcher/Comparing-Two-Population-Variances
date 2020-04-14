@@ -13,5 +13,13 @@ Checking the normal quantile plots, we will assume the populations are about nor
 
 ### Hypotheses for Equal Population Variances (σ^2(1) = σ^2(2)): F-Statistic
 
-The common statistical procedure for comparing population variances (σ^2(1)) and (σ^2(2)) makes an inference about the ratio σ^2(1) / σ^2(2). 
+The common statistical procedure for comparing population variances (σ^2(1)) and (σ^2(2)) makes an inference about the ratio σ^2(1) / σ^2(2). To make this inference, we will use the ratio of the sample variances s^2(1) / s^2(2) as our test statistic.  
+ 
+When the above assumptions are satisfied and the null hypothesis is true, our F test statistic's sampling distribution is the F-distribution with n1 - 1 numerator degree of freedom and n2 - 1 denominator degrees of freedom. The F-distribution is right skewed because the ratio of sample variances can not be less than zero. 
 
+Let σ^2(1) = population variance of improvement scores for the DM group and σ^2(2) = population variance of improvement scores for the honey group.
+
+Ho: σ^2(1) / σ^2(2) = 1
+Ha: σ^2(1) / σ^2(2) != 1
+
+The F-distribution critical values correspond to the upper tail areas of the distribution. Because we have a two-tailed F-test, we need to make sure that  
