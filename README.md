@@ -37,7 +37,26 @@ For a 90% confidence interval, we used the formula (1.3)(1/1.78304342) < σ^2(1)
 
 Running the test in JMP and R shows the same results.
 
+![histogram](F-test.png)
 
+```
+library(tidyverse)
 
+cough <- read.csv("cough.csv")
+cough <- cough %>%
+        select(ImproveScore,Treatment) %>%
+        filter(Treatment == 'H' | Treatment == 'DM')
 
+var.test(cough$ImproveScore~cough$Treatment,alternative = "two.sided",conf.level = .90)
 
+# F test to compare two variances
+
+# data:  cough$ImproveScore by cough$Treatment
+# F = 1.3009, num df = 32, denom df = 34, p-value = 0.4514
+# alternative hypothesis: true ratio of variances is not equal to 1
+# 90 percent confidence interval:
+# 0.7296084 2.3333631
+# sample estimates:
+# ratio of variances 
+#          1.300924 
+```
