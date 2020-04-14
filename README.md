@@ -20,6 +20,24 @@ When the above assumptions are satisfied and the null hypothesis is true, our F 
 Let σ^2(1) = population variance of improvement scores for the DM group and σ^2(2) = population variance of improvement scores for the honey group.
 
 Ho: σ^2(1) / σ^2(2) = 1
+
 Ha: σ^2(1) / σ^2(2) != 1
 
-The F-distribution critical values correspond to the upper tail areas of the distribution. Because we have a two-tailed F-test, we need to make sure that  
+The F-distribution critical values correspond to the upper tail areas of the distribution. Because we have a two-tailed F-test, we need to make sure that the upper tail is used for the rejection region. We do this by placing larger sample variance in the numerator of our F test statistic. 
+
+F = 10.60 / 8.15 = 1.3 
+
+In our example, the DM group has the largest sample variance which is why it is in the numerator for our F test statistic. This doubles the value for alpha since their is double the chance the F-ratio will be in the upper tail of the distribution. Essentially, we establish a one-tailed rejection region instead of a two-tail rejection region.
+
+### Test of Hypotheses for Equal Population Variances (σ^2(1) = σ^2(2))
+We have 32 numerator dfs and 34 denominator dfs in our example. Using a significance level of .10, F(a/2=.05) = 1.78304342
+. Since 1.3 < 1.78304342, we do not reject the null hypothesis. Since F(0.23) = 1.29 wih a df of (32,34) is less than 1.3, we can assume the p-value is less than 2(0.23) = 0.46.
+
+For a 90% confidence interval, we used the formula (1.3)(1/1.78304342) < σ^2(1) / σ^2(2) < (1.3)(1.79362045) = 0.7290904896 < σ^2(1) / σ^2(2) < 2.331706585. 
+
+Running the test in JMP and R shows the same results.
+
+
+
+
+
